@@ -1,9 +1,11 @@
 # geneticOffsetR
 Custom R functions from:  Fitzpatrick MC, Chhatre VE, Soolanayakanahally RY, Keller SR (in review) Experimental support for genomic prediction of climate maladaptation using the machine learning approach Gradient Forests. *Molecular Ecology Resources*
 
-The function allow running GF on large numbers of SNPs and support outlier detection. We also provide a function for calculating genetic offsets ([Fitzpatrick & Keller 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12376)), but also see Andy Gougherty's [repository](https://github.com/agougher/poplarAdaptiveOffset) that provides some additional functionality for offset analyses described in [Gougherty et al. (2021) Nature Climate Change](https://www.nature.com/articles/s41558-020-00968-6).  
+The functions allow fitting GF to large numbers of SNPs and help with outlier detection. We also provide a function for calculating genetic offsets ([Fitzpatrick & Keller 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12376)), but also see Andy Gougherty's [repository](https://github.com/agougher/poplarAdaptiveOffset) that provides additional functionality for genetic offset analyses as described in [Gougherty et al. (2021) Nature Climate Change](https://www.nature.com/articles/s41558-020-00968-6).  
 
-#### Here's a simple example for estimating p-values for outlier detection using GF modeling.
+***
+
+**Here's a simple example for estimating p-values for outlier detection using GF modeling on 6000+ SNPs. See the comments within the R functions for more details.**
 
 File path to allele freq data. Contains data for ~6500 SNPs, of which ~1500 are intergenic.
 ```{r}
