@@ -1,6 +1,6 @@
 ################################################################################
 # Supporting R functions used in:
-# Fitzpatrick et al. (2021) Experimental support for genomic prediction of 
+# Fitzpatrick et al. (in review) Experimental support for genomic prediction of 
 # climate maladaptation using the machine learning approach Gradient Forests.
 # Molecular Ecology Resources.
 #
