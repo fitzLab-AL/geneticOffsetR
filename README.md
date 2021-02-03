@@ -4,16 +4,16 @@ Custom R functions from:  Fitzpatrick MC, Chhatre VE, Soolanayakanahally RY, Kel
 ```{r}
 
 # path to allele freq data
-filePath <- "/Users/mfitzpatrick/code/geneticOffsetR/lociTable.csv"
+filePath <- "~/lociTable.csv"
 
 # env data for each population
-load("/Users/mfitzpatrick/code/geneticOffsetR/envTable.RData")
+load("~/envTable.RData")
 
 # variables to use in fitting GF
 vars <- c("y", "elev", "bio2", "bio10", "bio11", "bio18", "bio19")
 
 # names of intergenic SNPs for outlier detection
-load("/Users/mfitzpatrick/code/geneticOffsetR/igenSNPs.RData")
+load("~/igenSNPs.RData")
 
 # fit GF models to 6000+ SNPs individually, in parallel and return
 # importance (R2) values
