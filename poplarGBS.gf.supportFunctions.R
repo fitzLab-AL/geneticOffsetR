@@ -174,3 +174,42 @@ findOL <- function(runGFObj, summaryTab, alFreqs, nmSNPs){
   return(pV)
 }
 ##////////////////////////////////////////////////////////////////////////////##
+
+
+# calculate genetic offset -----------------------------------------------------
+
+
+########## calculate adaptive offset for populations in space or time
+offsetDist <- function(gfMod, vars, env2, combined=F,
+                       pops = envPop$pop_code, weighted=FALSE){
+  #gfMod = gf model for prediction
+  #vars = names of env variables
+  #env2 = new environment (new place / time)
+  
+  # calculates the proportion of SNPs with an R2=0
+  # this is used to adjust the transformed values to reflect
+  # these GF models with R2=0.
+  noR2prop <- length(gfMod$result)/length(gfMod$Y)
+  
+  if(weighted){
+    transEnv2 <- predict(gfMod, env2[,vars])*noR2prop #new env
+    transEnv1 <- predict(gfMod)*noR2prop #current env
+  } else {
+    transEnv2 <- predict(gfMod, env2[,vars]) #new env
+    transEnv1 <- predict(gfMod) #current env
+  }
+  
+  if(combined){
+    transEnv1 <- transEnv1[1:42,names(transEnv2)]
+    # transEnv1 <- data.frame(pop_code=rep(pops, length(unique(gfMod$X$gf.name))),
+    #                                      transEnv1)
+    # transEnv1 <- aggregate(.~pop_code, data=transEnv1, mean)[,-1]
+  }
+  
+  #calculate Euclidean distance in transformed env space
+  num <- nrow(transEnv1)
+  dOut <- lapply(1:num, function(x, tEnv1, tEnv2){
+    as.numeric(pdist(tEnv1[x,],  tEnv2)@dist)}, tEnv2=transEnv2, tEnv1=transEnv1)
+  return(dOut)
+}
+##////////////////////////////////////////////////////////////////////////////##
