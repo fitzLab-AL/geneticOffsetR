@@ -176,15 +176,16 @@ findOL <- function(runGFObj, summaryTab, alFreqs, nmSNPs){
 ##////////////////////////////////////////////////////////////////////////////##
 
 
-# calculate genetic offset -----------------------------------------------------
-
-
+# calculate genetic offsets ----------------------------------------------------
 ########## calculate adaptive offset for populations in space or time
 offsetDist <- function(gfMod, vars, env2, combined=F,
                        pops = envPop$pop_code, weighted=FALSE){
+  
   #gfMod = gf model for prediction
   #vars = names of env variables
   #env2 = new environment (new place / time)
+  #weighted = whether or nto to weight the offset by SNPs with R2=0. This
+  # is experimental and requires more research.
   
   # calculates the proportion of SNPs with an R2=0
   # this is used to adjust the transformed values to reflect
