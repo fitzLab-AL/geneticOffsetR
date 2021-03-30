@@ -1,5 +1,5 @@
 # geneticOffsetR
-Custom R functions and data sets from:  Fitzpatrick MC, Chhatre VE, Soolanayakanahally RY, Keller SR (in press) Experimental support for genomic prediction of climate maladaptation using the machine learning approach Gradient Forests. *Molecular Ecology Resources* Authorea preprint @ https://doi.org/10.22541/au.159863198.86187354
+Custom R functions and data sets from:  Fitzpatrick, M.C., Chhatre, V.E., Soolanayakanahally, R.Y. and Keller, S.R. (2021), Experimental support for genomic prediction of climate maladaptation using the machine learning approach Gradient Forests. *Mol Ecol Resour.* https://doi.org/10.1111/1755-0998.13374
 
 ***
 
