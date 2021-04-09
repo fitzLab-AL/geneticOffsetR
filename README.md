@@ -6,8 +6,9 @@ Custom R functions and data sets from:  Fitzpatrick MC, Chhatre VE, Soolanayakan
 ## DATA
 ## List of files in the /data folder and brief explanation of each:
 
-- **balsam_core336inds_42pops.vcf.gz:** *bgzipped vcf file containing SNP genotypes for 336 Populus balsamifera from the core ancesty deme*
-- **GF_GBS_predict_gardens.R:** *R script for analysis of height grwoth as a function of gnetic and climate offsets*
+- **GF_GBS_predict_gardens.R:** *R script for analysis of height growth as a function of genetic and climate offsets*
+
+- **balsam_core336inds_42pops.vcf.gz:** *bgzipped vcf file containing SNP genotypes for 336 Populus balsamifera from the core ancestry deme*
 - **core336.bayenv.gardenOffset.csv:** *Genetic offset predictions based on outliers identified by Bayenv2*
 - **core336.Bayenv-lfmm.gardenOffset.csv:** *Genetic offset predictions based on outliers identified by Bayenv2 and LFMM*
 - **core336.bf.pc1.emp.txt:** *List of outlier SNPs with empirical p-values from Bayenv2 analysis using climate PC1*
