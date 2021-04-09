@@ -29,7 +29,7 @@ Custom R functions and data sets from:  Fitzpatrick MC, Chhatre VE, Soolanayakan
 
 ## R SCRIPTS
 
-The R functions allow fitting GF to large numbers of SNPs and help with outlier detection. We also provide a function for calculating genetic offsets ([Fitzpatrick & Keller 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12376)), but also see Andy Gougherty's [repository](https://github.com/agougher/poplarAdaptiveOffset) that provides additional functionality for genetic offset analyses as described in [Gougherty et al. (2021) Nature Climate Change](https://www.nature.com/articles/s41558-020-00968-6).  
+The R functions allow fitting GF to large numbers of SNPs and help with detection of outlier SNPs. We also provide a function for calculating genetic offsets ([Fitzpatrick & Keller 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12376)), but also see Andy Gougherty's [repository](https://github.com/agougher/poplarAdaptiveOffset) that provides additional functionality for genetic offset analyses as described in [Gougherty et al. (2021) Nature Climate Change](https://www.nature.com/articles/s41558-020-00968-6).  
 
 ***
 
