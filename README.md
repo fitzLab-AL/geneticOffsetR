@@ -6,8 +6,6 @@ Custom R functions and data sets from:  Fitzpatrick MC, Chhatre VE, Soolanayakan
 ## DATA
 ## List of files in the /data folder and brief explanation of each:
 
-- **GF_GBS_predict_gardens.R:** *R script for analysis of height growth as a function of genetic and climate offsets*
-
 - **balsam_core336inds_42pops.vcf.gz:** *bgzipped vcf file containing SNP genotypes for 336 Populus balsamifera from the core ancestry deme*
 - **core336.bayenv.gardenOffset.csv:** *Genetic offset predictions based on outliers identified by Bayenv2*
 - **core336.Bayenv-lfmm.gardenOffset.csv:** *Genetic offset predictions based on outliers identified by Bayenv2 and LFMM*
@@ -34,7 +32,7 @@ The R functions allow fitting GF to large numbers of SNPs and help with detectio
 ***
 
 - **GF_GBS_predict_gardens.R:** *R script for analysis of height growth as a function of genetic and climate offsets*
-- **poplarGBS.gf.supportFunctions.R:** *R functions for (1) fitting GF in parallel, (2) detcting outlier SNPs, and (3) calculating genetic offsets*
+- **poplarGBS.gf.supportFunctions.R:** *R functions for (1) fitting GF in parallel, (2) detecting outlier SNPs, and (3) calculating genetic offsets*
 
 **Here's a simple example for estimating p-values for outlier detection using GF modeling on 6000+ SNPs. See the comments within the R functions for more details.**
 
